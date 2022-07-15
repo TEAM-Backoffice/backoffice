@@ -1,0 +1,63 @@
+.Cont{
+  display:flex;
+  position: relative;
+  flex-wrap:wrap;
+  width: 1634px;
+  margin: auto;
+}
+.Item{
+  border: 2px solid black;
+  width: 750px;
+  height: 600px;
+  margin:25px;
+  padding:5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.BackOf{
+  position: absolute;
+  height: 260px;
+  width:260px;
+  top: 509px;
+  left:658px;
+  border:0px;
+  padding: 0px; 
+}
+
+.ImgBO {
+  width: 250px;
+  height: 250px; 
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.Img {
+  object-fit: cover;
+  width: 400px;
+  height: 100%;
+}
+
+.Picture {
+  width: 400px;
+  margin-right: 0;
+  border-right: none;
+}
+.Name {
+ margin-left: 0;
+ padding-left: 5px;
+ width: 340px;
+ border-left: none;
+ font-size: 35px;
+ /*font-weight: bold;*/
+}
+.start {
+  padding-right: 5px;
+  text-align: right;
+  font-size: 35px;
+  font-weight: bold;
+}
+.weeks{
+  
+}
