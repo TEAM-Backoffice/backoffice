@@ -8,6 +8,8 @@
   flex-wrap:wrap;
   width: 1600px;
   margin: auto;
+  color: white;
+  background: #F5FFFA;
 }
 .Item{
   border: 2px solid black;
@@ -19,6 +21,10 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  border-radius: 25px;
+  background-color: RGB(120, 65, 98);
+  box-shadow: 0 0 10px rgba(0,0,0,1);
+  background: #fcc300;
 }
 .BackOf{
   position: absolute;
@@ -28,6 +34,7 @@
   left:641px;
   border:none;
   padding: 0px; 
+  border-radius: 50%;
 }
 
 .ImgBO {
@@ -47,6 +54,9 @@
   width: 360px;
   margin-right: 0;
   border-right: none;
+  border-right: none;
+  border-radius: 25px 0px 0px 25px;
+  background: #fcc300;
 }
 .Name {
  margin-left: 0;
@@ -54,13 +64,23 @@
  width: 242px;
  border-left: none;
  font-size: 35px;
+ border-radius: 0px 25px 25px 0px;
+ background: #fcc300;
  /*font-weight: bold;*/
 }
 .start {
   text-align: right;
   font-size: 35px;
+<<<<<<< HEAD
 }
 .weeks {
   text-align: left;
   font-size: 35px;
+=======
+  font-weight: bold;
+  background: #651144;
+}
+.weeks{
+  background: #651144;
+>>>>>>> 5f211feb24624778243cf6a196f761300194a416
 }
