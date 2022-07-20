@@ -51,18 +51,18 @@
 }
 
 .Picture {
-  width: 360px;
+  width: 674px;
   margin-right: 0;
-  border-right: none;
-  border-right: none;
-  border-radius: 25px 0px 0px 25px;
+  /*border-right: none;*/
+  border-radius: 25px 25px 25px 25px;
   background: #fcc300;
 }
 .Name {
- margin-left: 0;
+ margin-left: -314px;
  padding-left: 35px;
  width: 242px;
  border-left: none;
+ box-shadow: none;
  font-size: 35px;
  border-radius: 0px 25px 25px 0px;
  background: #fcc300;
