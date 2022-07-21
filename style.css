@@ -54,19 +54,23 @@
 }
 
 .Picture {
-  width: 360px;
+  width: 674px;
   margin-right: 0;
-  border-right: none;
-  border-right: none;
-  border-radius: 25px 0px 0px 25px;
+  /*border-right: none;*/
+  border-radius: 25px 25px 25px 25px;
   background: #fcc300;
 }
 .Name {
- margin-left: 0;
+ margin-left: -314px;
  padding-left: 35px;
  width: 242px;
  border-left: none;
+<<<<<<< HEAD
  font-size: 50px;
+=======
+ box-shadow: none;
+ font-size: 35px;
+>>>>>>> b6cf08812b59c693a19ecda40dce818673ad6578
  border-radius: 0px 25px 25px 0px;
  background: #fcc300;
   /*font-weight: bold;*/
@@ -74,12 +78,24 @@
 .start {
   text-align: right;
   font-size: 35px;
+<<<<<<< HEAD
+=======
+  background: #651144;
+}
+.weeks {
+  text-align: left;
+  font-size: 35px;
+  font-weight: bold;
+>>>>>>> b6cf08812b59c693a19ecda40dce818673ad6578
   background: #651144;
   color: white;
 }
 .weeks{
   background: #651144;
+<<<<<<< HEAD
   text-align: left;
   font-size: 35px;
   color: white;
+=======
+>>>>>>> b6cf08812b59c693a19ecda40dce818673ad6578
 }
