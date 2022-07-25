@@ -31,13 +31,14 @@
 }
 .BackOf{
   position: absolute;
-  height: 260px;
-  width:260px;
+  height: 245px;
+  width:245px;
   top: 569px;
   left:641px;
   border:none;
   padding: 0px; 
   border-radius: 50%;
+  background: none;
 }
 
 .ImgBO {
@@ -45,6 +46,7 @@
   height: 250px; 
   border-radius: 50%;
   border: 5px solid white;
+  object-fit: cover;
 }
 
 .Img {
@@ -121,14 +123,15 @@ text-decoration: none;
   }
   .BackOf{
     position: fixed;
-    height: 200px;
-    width: 200px;
+    height: 195px;
+    width: 195px;
     top: 20px;
     left:758px;
     border:none;
     padding: 0px; 
     border-radius: 50%;
     margin:0px;
+    background: transparent;
   }
   
   .ImgBO {
