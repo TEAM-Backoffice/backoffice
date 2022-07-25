@@ -10,10 +10,10 @@
   margin: auto;
   /*color: white;*/
   background: #F5FFFA;
-  line-height: 1,5em;
+  line-height: 1.5;
 }
 .Item{
-  border: 2px solid black;
+  border: 2px solid transparent;
   width: 672px;
   height: 600px;
   margin:25px;
@@ -25,7 +25,7 @@
   border-radius: 25px;
   background-color: RGB(120, 65, 98);
   box-shadow: 0 0 10px rgba(0,0,0,1);
-  background: #fcc300;
+  background: #fc0;
   text-align: left;
   font-size: 35px;
 }
@@ -66,7 +66,7 @@
  width: 242px;
  border-left: none;
  box-shadow: none;
- font-size: 50px;
+ font-size: 40px;
  border-radius: 0px 25px 25px 0px;
  background: #fcc300;
   /*font-weight: bold;*/
@@ -86,4 +86,99 @@
 a {
 color: rgb(44, 161, 234);
 text-decoration: none;
+}
+
+
+@media screen and (max-width:1000px) {
+
+  .Cont{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display:flex;
+    position: relative;
+    flex-wrap:wrap;
+    width: 800px;
+    margin: auto;
+    /*color: white;*/
+    background: #F5FFFA;
+    line-height: 1.5;
+  }
+  .Item{
+    border: 2px solid transparent;
+    width: 672px;
+    height: 600px;
+    margin:25px;
+    padding:35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border-radius: 25px;
+    background-color: RGB(120, 65, 98);
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+    background: #fcc300;
+    text-align: left;
+    font-size: 35px;
+  }
+  .BackOf{
+    position: fixed;
+    height: 200px;
+    width: 200px;
+    top: 5px;
+    left:758px;
+    border:none;
+    padding: 0px; 
+    border-radius: 50%;
+    margin:0px;
+  }
+  
+  .ImgBO {
+    width: 200px;
+    height: 200px; 
+    border-radius: 50%;
+    border: 5px solid white;
+  }
+  
+  .Img {
+    object-fit: cover;
+    width: 400px;
+    height: 100%;
+  }
+  
+  .Picture {
+    width: 674px;
+    margin-right: 0;
+    /*border-right: none;*/
+    border-radius: 25px 25px 25px 25px;
+     }
+  .Name {
+   margin-left: -314px;
+   padding-left: 35px;
+   width: 242px;
+   border-left: none;
+   box-shadow: none;
+   font-size: 40px;
+   border-radius: 0px 25px 25px 0px;
+   background: #fcc300;
+    /*font-weight: bold;*/
+  }
+  .start {
+    text-align: left;
+    font-size: 35px;
+    background: #651144;
+    color: white;
+  }
+  .Join{
+    background: #651144;
+    color: white;
+
+  }
+  .weeks{
+    text-align: left;
+    font-size: 35px;
+    color: black;
+  }
+  a {
+  color: rgb(44, 161, 234);
+  text-decoration: none;
+  }
 }
