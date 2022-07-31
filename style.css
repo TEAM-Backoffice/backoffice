@@ -1,45 +1,39 @@
-/*.body{
-  font-family: Arial, Helvetica, sans-serif;  
-  }*/
 .Cont{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  display:flex;
-  position: relative;
-  flex-wrap:wrap;
-  width: 1600px;
-  margin: auto;
-  /*color: white;*/
-  background: #F5FFFA;
+  display:grid;
+  grid-template-columns: repeat(2,minmax(auto, 600px));
+  grid-template-rows: minmax(auto, 600px) 60px minmax(auto, 600px);
+  grid-column-gap: 60px;
+  justify-content: center;
+  background: white;
   line-height: 1.5;
 }
 .Item{
   border: 2px solid black;
-  width: 672px;
-  height: 600px;
-  margin:25px;
-  padding:35px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  display: grid;
+  align-items: center;
+  padding: 35px;
   border-radius: 25px;
   background-color: RGB(120, 65, 98);
   box-shadow: 0 0 10px rgba(0,0,0,1);
   background: #fc0;
-  text-align: left;
-  font-size: 35px;
+  font-size: 28px;
 }
 .BackOf{
-  position: absolute;
-  height: 260px;
+  grid-column: 1/3;
+  grid-row: 2/3;
+  height:260px;
   width:260px;
-  top: 569px;
-  left:641px;
+  align-self:center;
+  justify-self: center;
   padding: 0px; 
+  margin-top: 0px;
+  margin-bottom: 0px;
   background: none;
   box-shadow: none;
-  border:none;
-  display: block;
+  border: none;
+  display: flex;
+
 }
 
 .ImgBO {
@@ -52,44 +46,33 @@
 }
 
 .Img {
-  object-fit: cover;
-  width: 400px;
+  width: 350px;
   height: 100%;
+  object-fit: fill;
 }
 
 .Picture {
-  width: 672px;
-  margin-right: 0;
-  /*border-right: none;*/
-  border-radius: 25px 25px 25px 25px;
+  grid-template-columns: 1fr 1fr;
   background: #fcc300;
 }
-.Name {
- margin-left: -314px;
- padding-left: 35px;
- width: 242px;
- border-left: none;
- box-shadow: none;
- font-size: 40px;
- border-radius: 0px 25px 25px 0px;
- background: #fcc300;
-  /*font-weight: bold;*/
+.Name{
+  padding: 35px;
 }
 .start {
   text-align: right;
-  font-size: 35px;
+  font-size: 28px;
   background: #651144;
   color: white;
 }
 .weeks{
   background: #651144;
   text-align: left;
-  font-size: 35px;
+  font-size: 28px;
   color: white;
 }
 a {
-color: rgb(44, 161, 234);
-text-decoration: none;
+   color: rgb(44, 161, 234);
+   text-decoration: none;
 }
 
 
@@ -97,49 +80,45 @@ text-decoration: none;
 
   .Cont{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display:flex;
-    position: relative;
-    flex-wrap:wrap;
-    width: 800px;
-    margin: auto;
-    /*color: white;*/
-    background: #F5FFFA;
+    display: grid;
+    grid-template-columns: 700px;
+    grid-template-rows: repeat(4,600px);
+    justify-content: center;
+    grid-row-gap: 60px;
+    background: white;
     line-height: 1.5;
   }
   .Item{
-    border: 2px solid transparent;
-    width: 672px;
-    height: 600px;
-    margin:25px;
-    padding:35px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    border: 2px solid black;
+    display: grid;
+    align-items: center;
+    padding: 15px;
     border-radius: 25px;
     background-color: RGB(120, 65, 98);
     box-shadow: 0 0 10px rgba(0,0,0,1);
-    background: #fcc300;
-    text-align: left;
-    font-size: 35px;
+    background: #fc0;
+    font-size: 20px;
   }
   .BackOf{
-    position: fixed;
-    height: 180px;
-    width:180px;
-    top: 10px;
-    left:780px;
+    display: block;
+    height:1600px;
+    width:160px;
+    grid-column: auto;
+    grid-row: auto;
+    align-self:center;
+    justify-self: center;
     padding: 0px; 
     background: none;
     box-shadow: none;
-    border:none;
-    display: block;
-    margin: 0px;
+    border: none;
+    position:fixed;
+    top:10px;
+    right: 120px;
   }
   
   .ImgBO {
-    width: 170px;
-    height: 170px; 
+    width: 150px;
+    height: 150px; 
     border-radius: 50%;
     border: 5px solid white;
     box-shadow: 0 0 10px rgba(0,0,0,1);
@@ -147,46 +126,37 @@ text-decoration: none;
   }
   
   .Img {
-    object-fit: cover;
-    width: 400px;
+    width: 350px;
     height: 100%;
+    object-fit: fill;
   }
   
   .Picture {
-    width: 674px;
-    margin-right: 0;
-    /*border-right: none;*/
-    border-radius: 25px 25px 25px 25px;
-     }
-  .Name {
-   margin-left: -314px;
-   padding-left: 35px;
-   width: 242px;
-   border-left: none;
-   box-shadow: none;
-   font-size: 40px;
-   border-radius: 0px 25px 25px 0px;
-   background: #fcc300;
-    /*font-weight: bold;*/
+    grid-template-columns: 1fr 1fr;
+    background: #fcc300;
+  }
+  .Name{
+    padding: 15px;
   }
   .start {
-    text-align: left;
-    font-size: 35px;
+    text-align: right;
+    font-size: 20px;
     background: #651144;
     color: white;
-  }
-  .Join{
-    background: #651144;
-    color: white;
-
   }
   .weeks{
     text-align: left;
-    font-size: 35px;
+    font-size: 20px;
     color: black;
   }
   a {
-  color: rgb(44, 161, 234);
-  text-decoration: none;
+     color: rgb(44, 161, 234);
+     text-decoration: none;
   }
+  .Join{
+      background:#651144;
+      color: white;
+  }
+ 
+
 }
